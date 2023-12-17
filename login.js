@@ -3,7 +3,7 @@ function auth() {
     var password = document.getElementById('password').value;
     
     if (email === 'admin@gmail.com' && password === '123456') {
-        window.location.assign('page2.html');
+        window.location.assign('home.html');
         return false; 
     } else {
         alert('Invalid information');
