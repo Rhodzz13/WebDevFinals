@@ -1,7 +1,6 @@
 
-
-body{
-    display:flex ;
+body {
+    display: flex;
     background-color: #f6f5f7;
     justify-content: center;
     align-items: center;
@@ -9,7 +8,25 @@ body{
     font-family: "Poppin", sans-serif;
     overflow: hidden;
     height: 100vh;
+    margin: 0; 
 }
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%; 
+    }
+
+    .form-container {
+        width: 100%; 
+    }
+
+    .overlay-container {
+        width: 100%; 
+    }
+}
+
+
 
 h1{
     font-weight: 700;
