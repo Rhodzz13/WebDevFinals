@@ -2,27 +2,28 @@ body {
     background-image: url("aaaaa.gif");
     background-size: cover;
     font-family: Arial, sans-serif;
-    
+    margin: 0;
+    padding: 0;
 }
+
 .container {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
 }
-input[type="text"], textarea {
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;     
 }
-input[type="tel"], tel {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+
 button {
     background-color: #4CAF50;
     color: white;
@@ -31,9 +32,11 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #45a049;
 }
+
 #thank-you {
     display: none;
     background-color: #4CAF50;
@@ -41,4 +44,10 @@ button:hover {
     padding: 10px;
     margin-top: 10px;
     border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
 }
